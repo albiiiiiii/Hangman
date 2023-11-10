@@ -127,11 +127,12 @@ Enter choice: """))
                                           print(v[i],end=" ")
                             else:
                                 print("\nYou have entered the index of a found element\n")
+                                time.sleep(1)
                                 for i in range(len(v)):
                                           print(v[i],end=" ")
                                 continue
                         else:
-                            print("\nDash position starts from 1 till the length of word\n")
+                            print("\nDash position starts from 1 till",len(v)," \n")
                             time.sleep(1)
                             for i in range(len(v)):
                                     print(v[i],end=" ")
@@ -143,6 +144,7 @@ Enter choice: """))
                         expert(w,d,v)
                 else:
                     print("\nEnter a valid choice\n")
+                    time.sleep(1)
                     for i in range(len(v)):
                                 print(v[i],end=" ")
                     expert(w,d,v)
@@ -189,7 +191,7 @@ Enter choice: """))
                         for i in range(len(v)):
                                 print(v[i],end=" ")
                 elif u==2:
-                    c=input("enter character: ")
+                    c=input("Enter character: ")
                     nm=c.upper()
                     if(nm in w):
                         for i in range(len(w)):
@@ -200,7 +202,7 @@ Enter choice: """))
                                 if('_' not in v):
                                     right(w,d)
                     elif(nm in '0123456789'):
-                        print("only characters allowed")
+                        print("\nOnly characters allowed\n")
                         time.sleep(1)
                         for i in range(len(v)):
                                     print(v[i],end=" ")
